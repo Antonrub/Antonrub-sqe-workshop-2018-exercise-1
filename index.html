@@ -2,7 +2,6 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-
         <style>
             table {
                 width: 100%;
@@ -18,6 +17,20 @@
                 width: 80%;
                 height: 95%;
             }
+
+            th, td, p, input {
+                font:15px Arial;
+            }
+            table, th, td
+            {
+                border: solid 2px #DDD;
+                border-collapse: collapse;
+                padding: 4px 5px;
+                text-align: center;
+            }
+            th {
+                font-weight:bold;
+            }
         </style>
     </head>
     <body>
@@ -30,7 +43,7 @@
                 </td>
                 <td>
                     <div>
-                        <label>Parsed code here</label>
+                        <label>Chart</label>
                     </div>
                 </td>
             </tr>
@@ -42,14 +55,15 @@
                 </td>
                 <td>
                     <div class="textAreaWrapper">
-                        <textarea id="parsedCode" title="Parse code"></textarea>
+                        <table id = "chart"></table>
+                        <!--<textarea id="parsedCode" title="Parse code"></textarea>-->
                     </div>
                 </td>
             </tr>
             <tr>
                 <td>
                     <div>
-                        <button id="codeSubmissionButton">Parse code</button>
+                        <button id="codeSubmissionButton">Create Chart</button>
                     </div>
                 </td>
                 <td>
