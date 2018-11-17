@@ -19,6 +19,5 @@ $(document).ready(function () {
             for (let j = 0; j < columns.length; j++) {
                 let tabCell = table_row.insertCell(-1);
                 tabCell.innerHTML = parsedCode[i][columns[j]];
-            }}
-    });
+            }}});
 });
